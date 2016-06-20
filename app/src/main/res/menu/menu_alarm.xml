@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Sort Menu -->
+    <item
+        android:title="@string/AlarmMenuSort"
+        android:icon="@drawable/ic_sort"
+        android:orderInCategory="1"
+        app:showAsAction="always">
+        <menu>
+            <!-- Sort Text Button -->
+            <item
+                android:id="@+id/AlarmTextSort"
+                android:title="@string/AlarmMenuSortText"
+                android:icon="@drawable/ic_text_sort"
+                android:orderInCategory="1"
+                app:showAsAction="always"/>
+            <!-- Sort Text Button -->
+            <item
+                android:id="@+id/AlarmTimeSort"
+                android:title="@string/AlarmMenuSortTime"
+                android:icon="@drawable/ic_time_sort"
+                android:orderInCategory="2"
+                app:showAsAction="always"/>
+        </menu>
+    </item>
+
+</menu>

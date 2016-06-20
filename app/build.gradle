@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.0"
+
+    defaultConfig {
+        applicationId "com.net.alone.ila"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 2
+        versionName "2.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'com.android.support:palette-v7:23.1.0'
+    compile 'com.android.support:cardview-v7:23.1.1'
+    compile 'com.android.support:design:23.0.0'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.tsengvn:Typekit:1.0.0'
+    compile files('libs/huelocalsdk.jar')
+    compile files('libs/huesdkresources.jar')
+    compile project(':daum-speech-openapi-3.0')
+}

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <!-- Kids Save ToolBar -->
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/custom_toolbar"/>
+
+    <!-- Kids Save ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <!-- Kids Save ScrollView Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- Kids Save EditText CardView -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                card_view:cardCornerRadius="10dp">
+                <!-- Kids Save TextInput Layout -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- Kids Save EditText Layout -->
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/KidsSaveEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:singleLine="true"
+                        android:maxLength="10"
+                        android:hint="@string/KidsSaveEditText"/>
+                </android.support.design.widget.TextInputLayout>
+            </android.support.v7.widget.CardView>
+
+            <!-- Kids Save Sort CardView-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                card_view:cardCornerRadius="10dp">
+                <!-- Kids Save RadioGroup Layout -->
+                <RadioGroup
+                    android:id="@+id/KidsSaveSortRadio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- Kids Save Radio Animal -->
+                    <RadioButton
+                        android:id="@+id/KidsSaveAnimal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:text="@string/CustomKidsSortAnimal"/>
+                    <!-- Kids Save Radio Vegetable -->
+                    <RadioButton
+                        android:id="@+id/KidsSaveVegetable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:text="@string/CustomKidsSortVegetable"/>
+                    <!-- Kids Save Radio Fruits -->
+                    <RadioButton
+                        android:id="@+id/KidsSaveFruits"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:text="@string/CustomKidsSortFruits"/>
+                    <!-- Kids Save Radio Object -->
+                    <RadioButton
+                        android:id="@+id/KidsSaveObject"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:text="@string/CustomKidsSortObject"/>
+                </RadioGroup>
+            </android.support.v7.widget.CardView>
+
+            <!-- Kids Save ImageView CardView -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                card_view:cardCornerRadius="10dp">
+                <!-- Kids Save ImageView -->
+                <ImageView
+                    android:id="@+id/KidsSaveImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:contentDescription="@string/KidsSaveImageView"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:scaleType="center"
+                    android:src="@drawable/img_photo"/>
+            </android.support.v7.widget.CardView>
+
+            <!-- Color Information -->
+            <include
+                android:id="@+id/KidsSavenformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                layout="@layout/custom_color_information"/>
+
+            <!-- Kids Save Color RecyclerView -->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/KidsSaveColorRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

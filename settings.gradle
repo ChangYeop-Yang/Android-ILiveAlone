@@ -1,0 +1,1 @@
+include ':app', ':daum-speech-openapi-3.0'

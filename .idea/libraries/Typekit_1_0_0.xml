@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Typekit-1.0.0">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.tsengvn/Typekit/1.0.0/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.tsengvn/Typekit/1.0.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tsengvn/Typekit/1.0.0/85372609a5557e9b9ca3b90ca1fc157566bdc8a5/Typekit-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

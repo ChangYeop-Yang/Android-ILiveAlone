@@ -1,0 +1,163 @@
+<resources>
+    <string name="app_name">Hue ILA</string>
+    <!-- Navigation Menu -->
+    <string name="Navigation_Label1">LifeStyle</string>
+    <string name="Navigation_Alarm">알람</string>
+    <string name="Navigation_SmartTimer">스마트 타이머</string>
+    <string name="Navigation_LifeLighting">생활</string>
+    <string name="Navigation_Label2">Lighting</string>
+    <string name="Navigation_Lighting">조명</string>
+    <string name="Navigation_Kids">키즈</string>
+    <string name="Navigation_Label3">Etc</string>
+    <string name="Navigation_Exit">종료</string>
+    <!-- Main Activity -->
+    <string name="MainGPSComment">GPS기능이 탑재되었거나, Wi-Fi 기능이 탑재된 단말기 또는 Cell ID에 기반한 단말기 등을 비롯하여 위치정보수집기능이 주기적으로 이동통신 및 Wi-Fi 기지국에 대한 위치정보를 수집합니다. 이러한 정보는, 이용자의 현재 위치를 확인하고 서비스를 제공하는데 사용됩니다. 그 외 활용할 목적으로 서버에 수집, 전송, 또는 제 3자에게 제공하지 않습니다.</string>
+    <string name="MainWeatherInformation">● 날씨정보</string>
+    <string name="MainWeatherIconImage">날씨 아이콘</string>
+    <string name="MainWeatherText">날씨상태</string>
+    <string name="MainWeatherTemp">현재온도</string>
+    <string name="MainWeatherWind">바람방향</string>
+    <string name="MainWeatherRain">강수확률</string>
+    <string name="MainConnectionText">● 연결정보</string>
+    <string name="MainConnectSelect">연결하기</string>
+    <string name="MainConnectSuccess">Hue Bridge Success!</string>
+    <string name="MainQuick">● 빠른설정</string>
+    <string name="MainQuickPower">전원</string>
+    <string name="MainQuickCode">색상코드</string>
+    <string name="MainMenuSetting">설정</string>
+    <string name="MainMenuMic">음성인식</string>
+    <!-- Alarm Activity -->
+    <string name="AlarmList">● 알람 목록</string>
+    <string name="AlarmMenuSort">정렬</string>
+    <string name="AlarmMenuSortText">이름순 정렬</string>
+    <string name="AlarmMenuSortTime">시간순 정렬</string>
+    <!-- Timer Activity -->
+    <string name="TimerListText">● 스마트타이머 목록</string>
+    <string name="TimerSettingTime">● 스마트타이머 설정</string>
+    <string name="TimerHourText">시</string>
+    <string name="TimerMinuteText">분</string>
+    <string name="TimerSecondsText">초</string>
+    <string name="TimerCreateButton">저장</string>
+    <string name="TimerStartButton">시작</string>
+    <string name="TimerResetButton">초기화</string>
+    <string name="TimerIConImage">타이머 아이콘</string>
+    <string name="TimerTimeText">타이머 시간</string>
+    <string name="TimerNameText">타이머 이름</string>
+    <string name="TimerApply">Apply</string>
+    <string name="TimerDelete">Delete</string>
+    <string name="TimerName">타이머의 이름을 입력해주세요.</string>
+    <!-- Check Activity -->
+    <string name="CheckTitleText">제목</string>
+    <string name="CheckImageView">이미지</string>
+    <string name="CheckText">지정 된 시간이 되었습니다.</string>
+    <!-- Connection Activity -->
+    <string name="ConnectionTitle">연결 가능한 Hue Bridge 목록</string>
+    <string name="Connection">잠시만 기다려 주세요.</string>
+    <string name="ConnectionInformation">Hue Bridge 장비를 찾는 과정에서 약 10초의 시간이 소요가 되며, 검색 된 장비는 선택하여 연결을 진행하시면 됩니다.</string>
+    <!-- Light Activity -->
+    <string name="LightTotalSetting">● 통합설정</string>
+    <string name="LightColorSetting">● 색상설정</string>
+    <string name="LightColorPenCilRED">빨간색연필</string>
+    <string name="LightColorPenCilBLUE">파란색연필</string>
+    <string name="LightColorPenCilGREEN">초록색연필</string>
+    <string name="LightColorPenCilORANGE">주황색연필</string>
+    <string name="LightColorPenCilPURPLE">보라색연필</string>
+    <string name="LightColorPenCilYellow">노란색연필</string>
+    <!-- Life Activity -->
+    <string name="LifeBookMark">● 즐겨찾기</string>
+    <string name="LifeMenuShake">Shake</string>
+    <string name="LifeSaveEdit">이름을 입력해주세요.</string>
+    <string name="LifeSaveTotalColor">● 통합설정</string>
+    <string name="LifeSaveTotalCode">코드정보</string>
+    <string name="LifeSaveImage">● 그림설정</string>
+    <string name="LifeMenuAudio">음악</string>
+    <string name="LifeSaveMenuCamera">카메라</string>
+    <string name="LifeSaveMenuSave">저장</string>
+    <!-- Kids Save Activity -->
+    <string name="KidsSaveEditText">이름을 입력해주세요.</string>
+    <string name="KidsSaveImageView">사진</string>
+    <string name="KidsSaveText">* 사진을 촬영하거나 앨범에서 사진을 가져오면 자동으로 색상이 추출됩니다.</string>
+    <!-- Custom Connection -->
+    <string name="CustomConnectionImageView">장비아이콘</string>
+    <string name="CustomConnectionIP">장비IP주소</string>
+    <string name="CustomConnectionMAC">장비MAC주소</string>
+    <!-- Custom SmartTimer -->
+    <string name="CustomSmartTimerRed">Red</string>
+    <string name="CustomSmartTimerOrange">Orange</string>
+    <string name="CustomSmartTimerGreen">Green</string>
+    <string name="CustomSmartTimerWhite">White</string>
+    <string name="CustomSmartTimerPurple">Purple</string>
+    <string name="CustomSmartTimerBlue">Blue</string>
+    <string name="CustomSmartTimerPink">Pink</string>
+    <string name="CustomSmartTimerBrown">Brown</string>
+    <string name="CustomSmartTimerYellow">Yellow</string>
+    <!-- Custom Alarm Adapter -->
+    <string name="CustomAlarmName">알람명</string>
+    <string name="CustomAlarmTime">알람시간</string>
+    <string name="CustomAlarmMonth">월</string>
+    <string name="CustomAlarmTuesday">화</string>
+    <string name="CustomAlarmWednesday">수</string>
+    <string name="CustomAlarmThursday">목</string>
+    <string name="CustomAlarmFriday">금</string>
+    <string name="CustomAlarmSaturday">토</string>
+    <string name="CustomAlarmSunday">일</string>
+    <!-- Custom Alarm Dialog -->
+    <string name="CustomAlarmSave">저장</string>
+    <string name="CustomAlarmDate">● 시간</string>
+    <string name="CustomAlarm">● 반복 설정</string>
+    <string name="CustomAlarmColor">● 색상 설정</string>
+    <string name="CustomAlarmEdit">알람 이름을 입력해주세요.</string>
+    <!-- Custom Light -->
+    <string name="CustomLightImageView">연결아이콘</string>
+    <string name="CustomLightState">연결상태</string>
+    <string name="CustomLightLampName">Hue Name</string>
+    <string name="CustomLightRED">R</string>
+    <string name="CustomLightBLUE">B</string>
+    <string name="CustomLightGREEN">G</string>
+    <string name="CustomLightBrightness">L</string>
+    <!-- Custom Life -->
+    <string name="CustomLifeBookMarkImage">색상이미지</string>
+    <string name="CustomLifeBookMarkText">색상코드</string>
+    <string name="CustomLifeBookMarkName">즐겨찾기 이름</string>
+    <string name="CustomLifeBookMarkApply">Apply</string>
+    <!-- Custom Quick List -->
+    <string name="MainQuickRED">● RED</string>
+    <string name="MainQuickBLUE">● BLUE</string>
+    <string name="MainQuickGREEN">● GREEN</string>
+    <string name="MainQuickBrightness">● LUX</string>
+    <!-- Custom Kids Adapter -->
+    <string name="CustomKidsTitle">사진 제목</string>
+    <string name="CustomKidsCancel">삭제하기</string>
+    <string name="CustomKidsImage">사진</string>
+    <string name="CustomKidsOneColor">One Color</string>
+    <string name="CustomKidsTwoColor">Two Color</string>
+    <string name="CustomKidsThreeColor">Three Color</string>
+    <string name="CustomKidsSortAnimal">동물</string>
+    <string name="CustomKidsSortVegetable">채소</string>
+    <string name="CustomKidsSortFruits">과일</string>
+    <string name="CustomKidsSortObject">사물</string>
+    <!-- Setting -->
+    <string-array name="SettingLifeMusic">
+        <item>밝기</item>
+        <item>색상</item>
+        <item>색상 + 밝기</item>
+    </string-array>
+    <string-array name="SettingLifeMusicBasic">
+        <item>밝기 모드</item>
+        <item>색상 모드</item>
+        <item>색상 + 밝기 모드</item>
+    </string-array>
+    <string-array name="SettingLifeMusicModeBasic">
+        <item>발라드</item>
+        <item>댄스</item>
+        <item>팝</item>
+        <item>힙합</item>
+    </string-array>
+    <string-array name="SettingLifeMusicMode">
+        <item>500</item>
+        <item>150</item>
+        <item>200</item>
+        <item>100</item>
+    </string-array>
+    <string name="SettingCalendarInformation">단말기 내부의 캘린더 정보를 통하여 HUE와 연동을 실시하려고 합니다. 이러한 정보는, HUE에서 알람을 이용하는데에서 사용이 됩니다. 그 외 활용할 목적으로 서버에 수집, 전송, 또는 제 3자에게 제공하지 않습니다.</string>
+</resources>

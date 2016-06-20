@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Home 부분 -->
+    <PreferenceCategory android:title="홈 화면">
+        <!-- Weather 기능 설정 부분 -->
+        <SwitchPreference
+            android:title="날씨 알람 설정"
+            android:key="Weather"
+            android:defaultValue="false"
+            android:summary="날씨 알람기능을 설정합니다."/>
+    </PreferenceCategory>
+
+    <!-- Life Music 부분 -->
+    <PreferenceCategory android:title="생활 화면">
+        <!-- Music 기능 설정 부분 -->
+        <ListPreference
+            android:defaultValue="밝기"
+            android:dependency="Music"
+            android:title="Music 기능 설정"
+            android:key="Music"
+            android:summary="Music 기능을 설정합니다."
+            android:entryValues="@array/SettingLifeMusic"
+            android:entries="@array/SettingLifeMusicBasic" />
+        <!-- Music 종류 설정 부분 -->
+        <ListPreference
+            android:defaultValue="300"
+            android:dependency="MusicMode"
+            android:title="Music 종류 설정"
+            android:key="MusicMode"
+            android:summary="Music 종류를 설정합니다."
+            android:entryValues="@array/SettingLifeMusicMode"
+            android:entries="@array/SettingLifeMusicModeBasic" />
+    </PreferenceCategory>
+
+    <!-- 외출 기능 부분 -->
+    <PreferenceCategory android:title="외출 기능">
+        <!-- 외출 기능 설정 부분 -->
+        <SwitchPreference
+            android:id="@+id/SettingGoOut"
+            android:title="외출 기능 설정"
+            android:key="GoOut"
+            android:defaultValue="false"
+            android:summary="외출 기능을 설정합니다."/>
+        <!-- 외출 시작 시간 설정 부분 -->
+        <Preference
+            android:title="외출 시작 설정"
+            android:dependency="GoOutStart"
+            android:key="GoOutStart"
+            android:defaultValue="10"
+            android:summary="외출 시작 시각을 설정합니다."/>
+        <!-- 외출 종료 시간 설정 부분 -->
+        <Preference
+            android:title="외출 종료 설정"
+            android:dependency="GoOutEnd"
+            android:key="GoOutEnd"
+            android:defaultValue="16"
+            android:summary="외출 종료 시각을 설정합니다."/>
+    </PreferenceCategory>
+
+    <!-- 기타 기능 부분 -->
+    <PreferenceCategory android:title="기타 기능">
+        <!-- 기타 기능 설정 부분 -->
+        <SwitchPreference
+            android:title="오늘의 색상 설정"
+            android:defaultValue="false"
+            android:key="Today"
+            android:summary="오늘의 색상을 설정합니다."/>
+        <!-- 캘린더 동기화 부분 -->
+        <SwitchPreference
+            android:title="캘린더 동기화 설정"
+            android:defaultValue="false"
+            android:key="Calendar"
+            android:summary="캘린더 동기화를 설정합니다."/>
+    </PreferenceCategory>
+
+    <!-- 어플리케이션 정보 부분 -->
+    <PreferenceCategory android:title="어플리케이션 정보">
+        <!-- 개발자 정보 확인 -->
+        <Preference
+            android:summary="개발자 정보를 확인합니다."
+            android:title="개발자 정보">
+            <!-- 개발자 홈페이지 이동 -->
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://yeop9657.blog.me"/>
+        </Preference>
+        <!-- 개발자 이메일 전송 -->
+        <Preference
+            android:summary="개발자에게 메일을 보냅니다."
+            android:title="이메일 보내기">
+            <!-- 개발자 이메일 전송 -->
+            <intent
+                android:action="android.intent.action.SENDTO"
+                android:data="mailto:yeop9657@naver.com"/>
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

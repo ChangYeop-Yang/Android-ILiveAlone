@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <!-- ToolBar -->
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/custom_toolbar"/>
+
+    <!-- Life TextView -->
+    <TextView
+        android:id="@+id/LifeBookMarkText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/LifeBookMark"
+        android:textColor="@color/colorPrimaryText"/>
+
+    <!-- Life RecyclerView Layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- Life RecyclerView -->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/LifeRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Life FloatingButton -->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/LifeSaveFloating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:src="@drawable/ic_color_add"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</LinearLayout>

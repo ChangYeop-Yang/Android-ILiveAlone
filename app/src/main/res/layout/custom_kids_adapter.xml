@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:fitsSystemWindows="true"
+    card_view:cardCornerRadius="10dp">
+
+    <!-- Custom Kids Layout -->
+    <LinearLayout
+        android:id="@+id/CustomKidsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="vertical">
+        
+        <!-- Custom Kids Title Layout -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- Custom Kids TextView -->
+            <TextView
+                android:id="@+id/CustomKidsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_alignParentLeft="true"
+                android:text="@string/CustomKidsTitle"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="20sp"/>
+            <!-- Custom Kids Sort TextView -->
+            <TextView
+                android:id="@+id/CustomKidsSortTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/CustomKidsTitle"
+                android:layout_alignBottom="@+id/CustomKidsTextView"
+                android:layout_toRightOf="@+id/CustomKidsTextView"
+                android:layout_toEndOf="@+id/CustomKidsTextView" />
+            <!-- Custom Kids Button -->
+            <ImageButton
+                android:id="@+id/CustomKidsCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_alignParentRight="true"
+                android:contentDescription="@string/CustomKidsCancel"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/ic_cancel"/>
+        </RelativeLayout>
+
+        <!-- Under -->
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.3dp"
+            android:background="@color/colorSecondaryText"/>
+        
+        <!-- Custom Kids ImageView -->
+        <ImageView
+            android:id="@+id/CustomKidsImageView"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="center"
+            android:src="@drawable/img_photo"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/CustomKidsImage"/>
+
+        <!-- Custom kids Color ImageView Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Custom Kids One Color Layout -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <!-- Custom Kids One Color ImageView -->
+                <ImageView
+                    android:id="@+id/CustomKidsOneColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:background="@color/colorPrimaryText"
+                    android:contentDescription="@string/CustomKidsOneColor"/>
+                <!-- Custom Kids One Color TextView -->
+                <TextView
+                    android:id="@+id/CustomKidsOneColorText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/CustomKidsOneColor"
+                    android:textColor="#FFFFFF"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <!-- Custom Kids Two Color Layout -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <!-- Custom Kids Two Color ImageView -->
+                <ImageView
+                    android:id="@+id/CustomKidsTwoColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:background="@color/colorAccent"
+                    android:contentDescription="@string/CustomKidsOneColor"/>
+                <!-- Custom Kids Two Color TextView -->
+                <TextView
+                    android:id="@+id/CustomKidsTwoColorText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/CustomKidsTwoColor"
+                    android:textColor="#FFFFFF"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+
+            <!-- Custom Kids Three Color Layout -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <!-- Custom Kids Three Color ImageView -->
+                <ImageView
+                    android:id="@+id/CustomKidsThreeColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:background="@color/colorLightPrimary"
+                    android:contentDescription="@string/CustomKidsOneColor"/>
+                <!-- Custom Kids Three Color TextView -->
+                <TextView
+                    android:id="@+id/CustomKidsThreeColorText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/CustomKidsThreeColor"
+                    android:textColor="#FFFFFF"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

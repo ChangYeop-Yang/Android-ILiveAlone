@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <!-- Alarm ToolBar -->
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/custom_toolbar"/>
+
+    <!-- Alarm Dialog ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <!-- Alarm Dialog Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Alarm Dialog EditText Layout -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="10dp">
+                <!-- Alarm Title EditText -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/AlarmNameEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:singleLine="true"
+                        android:maxLength="10"
+                        android:hint="@string/CustomAlarmEdit"/>
+                </android.support.design.widget.TextInputLayout>
+            </android.support.v7.widget.CardView>
+
+            <!-- Alarm Dialog NumberPicker CardView -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="10dp">
+                <!-- Alarm Dialog NumberPicker Layout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!-- Alarm Dialog Layout -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <!-- Alarm Dialog Date -->
+                        <TextView
+                            android:id="@+id/AlarmDialogDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_alignParentLeft="true"
+                            android:text="@string/CustomAlarmDate"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorPrimaryText"/>
+                        <!-- Alarm Dialog RecyclerButton -->
+                        <ImageButton
+                            android:id="@+id/AlarmDialogRecyclerButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="10dp"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:src="@drawable/ic_recycler"/>
+                    </RelativeLayout>
+                    <!-- Under -->
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.3dp"
+                        android:background="@color/colorSecondaryText"/>
+                    <!-- Alarm Dialog NumberPicker Layout -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <!-- Alarm Dialog Hour NumberPicker -->
+                        <NumberPicker
+                            android:id="@+id/AlarmDialogHour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"/>
+                        <!-- Alarm Dialog Minute NumberPicker -->
+                        <NumberPicker
+                            android:id="@+id/AlarmDialogMinute"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!-- Alarm Dialog Schedule Layout -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="10dp">
+                <!-- Alarm Dialog Schedule Layout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!-- Alarm Dialog Schedule TextView -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/CustomAlarm"
+                        android:textColor="@color/colorPrimaryText"/>
+                    <!-- Under -->
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.3dp"
+                        android:background="@color/colorSecondaryText"/>
+                    <!-- Alarm Dialog Schedule Layout -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <!-- Alarm Schedule Layout -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+                            <!-- Month -->
+                            <Button
+                                style="?android:attr/buttonStyleSmall"
+                                android:id="@+id/AlarmItemMonth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:layout_weight="1"
+                                android:text="@string/CustomAlarmMonth"/>
+                            <!-- Tuesday -->
+                            <Button
+                                style="?android:attr/buttonStyleSmall"
+                                android:id="@+id/AlarmItemTuesday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:layout_weight="1"
+                                android:text="@string/CustomAlarmTuesday"/>
+                            <!-- Wednesday -->
+                            <Button
+                                style="?android:attr/buttonStyleSmall"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:layout_weight="1"
+                                android:id="@+id/AlarmItemWednesday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="@string/CustomAlarmWednesday"/>
+                            <!-- Thursday -->
+                            <Button
+                                style="?android:attr/buttonStyleSmall"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:layout_weight="1"
+                                android:id="@+id/AlarmItemThursday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="@string/CustomAlarmThursday"/>
+                            <!-- Friday -->
+                            <Button
+                                style="?android:attr/buttonStyleSmall"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:layout_weight="1"
+                                android:id="@+id/AlarmItemFriday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="@string/CustomAlarmFriday"/>
+                            <!-- Saturday -->
+                            <Button
+                                style="?android:attr/buttonStyleSmall"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:layout_weight="1"
+                                android:id="@+id/AlarmItemSaturday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="@string/CustomAlarmSaturday"/>
+                            <!-- Sunday -->
+                            <Button
+                                style="?android:attr/buttonStyleSmall"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:layout_weight="1"
+                                android:id="@+id/AlarmItemSunday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="@string/CustomAlarmSunday"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!-- Alarm Dialog Color Layout -->
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/custom_color_list"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

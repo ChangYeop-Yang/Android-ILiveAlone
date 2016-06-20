@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LifeSaveContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <!-- Life Save ToolBar -->
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/custom_toolbar"/>
+
+    <!-- Life Save Scroller View -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <!-- Life Scroller View Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Life Save EditText CardView -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                card_view:cardCornerRadius="10dp">
+                <!-- Life Save TextInPutLayout -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- Life Save EditText -->
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/LifeSaveEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:singleLine="true"
+                        android:maxLength="10"
+                        android:hint="@string/LifeSaveEdit"/>
+                </android.support.design.widget.TextInputLayout>
+            </android.support.v7.widget.CardView>
+
+            <!-- Life Save Color CardView -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                card_view:cardCornerRadius="10dp">
+                <!-- Life Save Color Layout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!-- Life Save Color TextLayout -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <!-- Life Save Color Information TextView -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_alignParentLeft="true"
+                            android:text="@string/LifeSaveTotalColor"
+                            android:textColor="@color/colorPrimaryText"/>
+                        <!-- Life Save Color Code TextView -->
+                        <TextView
+                            android:id="@+id/LifeSaveColorCodeText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_alignParentRight="true"
+                            android:text="@string/LifeSaveTotalCode"
+                            android:textColor="#FFFFFF"/>
+                    </RelativeLayout>
+                    <include
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        layout="@layout/custom_quick_list"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!-- Color Information -->
+            <include
+                android:id="@+id/KidsSavenformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                layout="@layout/custom_color_information"/>
+
+            <!-- Life Save RecyclerView -->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/LifeSaveRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

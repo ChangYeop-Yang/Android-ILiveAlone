@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Save Button -->
+    <item
+        android:id="@+id/CustomSave"
+        android:title="@string/CustomAlarmSave"
+        android:icon="@drawable/ic_save"
+        android:orderInCategory="1"
+        app:showAsAction="always"/>
+
+</menu>

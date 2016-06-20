@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- Quick RED TextView -->
+        <TextView
+            android:id="@+id/QuickRED"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/QuickTextView"
+            android:text="@string/MainQuickRED"
+            android:textSize="15sp"
+            android:textColor="#D32F2F"/>
+        <!-- Quick RED SeekBar -->
+        <SeekBar
+            android:id="@+id/QuickREDSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/QuickTextView"
+            android:layout_toRightOf="@+id/QuickGREEN"
+            android:layout_toEndOf="@+id/QuickGREEN"
+            android:max="255"
+            android:indeterminate="false"
+            android:progress="125" />
+        <!-- Quick BLUE TextView -->
+        <TextView
+            android:id="@+id/QuickBLUE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/QuickRED"
+            android:text="@string/MainQuickBLUE"
+            android:textSize="15sp"
+            android:textColor="#1976D2"/>
+        <!-- Quick BLUE SeekBar -->
+        <SeekBar
+            android:id="@+id/QuickBLUESeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/QuickRED"
+            android:layout_alignLeft="@+id/QuickREDSeekBar"
+            android:layout_alignStart="@+id/QuickREDSeekBar"
+            android:max="255"
+            android:indeterminate="false"
+            android:progress="125" />
+        <!-- Quick GREEN TextView -->
+        <TextView
+            android:id="@+id/QuickGREEN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/QuickBLUE"
+            android:text="@string/MainQuickGREEN"
+            android:textSize="15sp"
+            android:textColor="#388E3C"/>
+        <!-- Quick GREEN SeekBar -->
+        <SeekBar
+            android:id="@+id/QuickGREENSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/QuickBLUE"
+            android:layout_alignLeft="@+id/QuickBLUESeekBar"
+            android:layout_alignStart="@+id/QuickBLUESeekBar"
+            android:max="255"
+            android:indeterminate="false"
+            android:progress="125" />
+        <!-- Quick LUN TextView -->
+        <TextView
+            android:id="@+id/QuickLUX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/QuickGREEN"
+            android:text="@string/MainQuickBrightness"
+            android:textSize="15sp"
+            android:textColor="@color/colorSecondaryText"/>
+        <!-- Quick LUN SeekBar -->
+        <SeekBar
+            android:id="@+id/QuickLUXSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/QuickGREEN"
+            android:layout_alignLeft="@+id/QuickBLUESeekBar"
+            android:layout_alignStart="@+id/QuickBLUESeekBar"
+            android:max="255"
+            android:indeterminate="false"
+            android:progress="200" />
+    </RelativeLayout>
+
+</LinearLayout>

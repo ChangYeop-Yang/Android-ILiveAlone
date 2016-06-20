@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!-- AppBar Layout -->
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/custom_toolbar"/>
+
+    <!-- DrawerLayout -->
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/DrawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.net.alone.ila.MainActivity">
+        <!-- FrameLayout -->
+        <FrameLayout
+            android:id="@+id/Container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- ScrollView -->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+                <!-- Main Linear Layout -->
+                <LinearLayout
+                    android:id="@+id/MainLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!-- Weather Main -->
+                    <RelativeLayout
+                        android:id="@+id/WeatherMainLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <!-- Weather TextView -->
+                        <TextView
+                            android:id="@+id/WeatherMainTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_alignParentLeft="true"
+                            android:text="@string/MainWeatherInformation"
+                            android:textColor="@color/colorPrimaryText"/>
+                        <!-- Weather CardView -->
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/WeatherCardView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/WeatherMainTextView"
+                            android:layout_margin="10dp"
+                            card_view:cardCornerRadius="10dp">
+                            <!-- Weather Layout -->
+                            <LinearLayout
+                                android:id="@+id/WeatherLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+                                    <!-- Weather ImageView -->
+                                    <ImageView
+                                        android:id="@+id/WeatherImageView"
+                                        android:layout_width="wrap_content"
+                                        android:minWidth="128dp"
+                                        android:layout_height="wrap_content"
+                                        android:minHeight="128dp"
+                                        android:layout_gravity="center"
+                                        android:scaleType="fitXY"
+                                        android:layout_weight="1"
+                                        android:layout_margin="10dp"
+                                        android:contentDescription="@string/MainWeatherIconImage"/>
+                                    <LinearLayout
+                                        android:id="@+id/WeatherTextLayout"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="right"
+                                        android:layout_weight="6"
+                                        android:orientation="vertical">
+                                        <!-- Weather Temp TextView -->
+                                        <TextView
+                                            android:id="@+id/WeatherTempTextView"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="10dp"
+                                            android:textSize="30sp"
+                                            android:textColor="@color/colorAccent"
+                                            android:text="@string/MainWeatherTemp"/>
+                                        <!-- Weather TextView -->
+                                        <TextView
+                                            android:id="@+id/WeatherTextView"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="5dp"
+                                            android:text="@string/MainWeatherText"/>
+                                        <!-- Weather Rain TextView -->
+                                        <TextView
+                                            android:id="@+id/WeatherRainTextView"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="5dp"
+                                            android:text="@string/MainWeatherRain"/>
+                                        <!-- Weather Wind TextView -->
+                                        <TextView
+                                            android:id="@+id/WeatherWindTextView"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="5dp"
+                                            android:text="@string/MainWeatherWind"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                    </RelativeLayout>
+
+                    <!-- Quick Color Layout -->
+                    <LinearLayout
+                        android:id="@+id/QuickMainLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- Quick Text Layout -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <!-- Quick TextView -->
+                            <TextView
+                                android:id="@+id/QuickTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/MainQuick"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_margin="10dp"/>
+                            <!-- Quick Color TextView -->
+                            <TextView
+                                android:id="@+id/QuickCodeText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/MainQuickCode"
+                                android:textColor="#FFFFFF"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/QuickPowerButton"
+                                android:layout_toStartOf="@+id/QuickPowerButton" />
+                            <!-- Quick Power ImageButton  -->
+                            <ImageButton
+                                android:id="@+id/QuickPowerButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:contentDescription="@string/MainQuickPower"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:src="@drawable/ic_shutdown"/>
+                        </RelativeLayout>
+
+                        <!-- Quick CardView -->
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/QuickCardView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            card_view:cardCornerRadius="10dp">
+                            <include
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                layout="@layout/custom_quick_list"/>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+
+                    <!-- Connection Layout -->
+                    <LinearLayout
+                        android:id="@+id/ConnectionMainLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <!-- Connection TextView -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="@string/MainConnectionText"
+                            android:textColor="@color/colorPrimaryText"/>
+                        <!-- Connection CardView -->
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/ConnectionCardView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            card_view:cardCornerRadius="10dp">
+                            <!-- Connection Layout -->
+                            <LinearLayout
+                                android:id="@+id/ConnectionLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+                                <!-- Connection TextView -->
+                                <TextView
+                                    android:id="@+id/ConnectionTextView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textSize="20sp"
+                                    android:text="@string/MainConnectSelect"
+                                    android:textColor="@color/colorSecondaryText"/>
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
+
+        <!-- NavigationView -->
+        <android.support.design.widget.NavigationView
+            android:id="@+id/NavigationView"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:menu="@menu/menu_navigation"/>
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

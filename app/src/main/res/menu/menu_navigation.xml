@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- LifeStyle Menu -->
+    <item android:title="@string/Navigation_Label1">
+        <menu>
+            <!-- Alarm -->
+            <item
+                android:id="@+id/Navigation_Alarm"
+                android:title="@string/Navigation_Alarm"
+                android:icon="@drawable/ic_alarm"
+                android:orderInCategory="1">
+            </item>
+            <!-- SmartTimer -->
+            <item
+                android:id="@+id/Navigation_SmartTimer"
+                android:title="@string/Navigation_SmartTimer"
+                android:icon="@drawable/ic_timer"
+                android:orderInCategory="2">
+            </item>
+            <!-- LifeLight -->
+            <item
+                android:id="@+id/Navigation_LifeLight"
+                android:title="@string/Navigation_LifeLighting"
+                android:icon="@drawable/ic_life"
+                android:orderInCategory="3">
+            </item>
+        </menu>
+    </item>
+
+    <!-- Lighting Menu -->
+    <item android:title="@string/Navigation_Label2">
+        <menu>
+            <!-- Lighting -->
+            <item
+                android:id="@+id/Navigation_Light"
+                android:title="@string/Navigation_Lighting"
+                android:icon="@drawable/ic_lighting"
+                android:orderInCategory="1">
+            </item>
+            <!-- Kids -->
+            <item
+                android:id="@+id/Navigation_Kids"
+                android:title="@string/Navigation_Kids"
+                android:icon="@drawable/ic_kids"
+                android:orderInCategory="2">
+            </item>
+        </menu>
+    </item>
+
+    <!-- Etc Menu -->
+    <item android:title="@string/Navigation_Label3">
+        <menu>
+            <!-- Exit -->
+            <item
+                android:id="@+id/Navigation_Exit"
+                android:title="@string/Navigation_Exit"
+                android:icon="@drawable/ic_shutdown"
+                android:orderInCategory="1"></item>
+        </menu>
+    </item>
+
+</menu>

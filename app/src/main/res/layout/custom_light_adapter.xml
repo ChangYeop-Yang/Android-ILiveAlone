@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/CustomLightCardView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:fitsSystemWindows="true"
+    card_view:cardCornerRadius="10dp">
+
+    <!-- Custom Light Total Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Custom Light Image Layout -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!-- Custom Light ImageView -->
+            <ImageView
+                android:id="@+id/CustomLightImageView"
+                android:layout_width="wrap_content"
+                android:minHeight="64dp"
+                android:layout_height="wrap_content"
+                android:minWidth="64dp"
+                android:layout_margin="10dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="@string/CustomLightImageView"
+                android:src="@drawable/ic_light_gray"/>
+            <!-- Custom Light TextView -->
+            <TextView
+                android:id="@+id/CustomLightStateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/CustomLightState"/>
+        </LinearLayout>
+
+        <!-- Custom Light SeekBar Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Custom Light Color Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <!-- Custom Light SeekBar Layout -->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <!-- Custom Light SeekBar TextView -->
+                    <TextView
+                        android:id="@+id/CustomLightName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="@string/CustomLightLampName"
+                        android:textColor="@color/colorPrimaryText"/>
+                    <!-- Custom RED SeekBar -->
+                    <TextView
+                        android:id="@+id/CustomLightRED"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="3dp"
+                        android:layout_below="@+id/CustomLightName"
+                        android:text="@string/CustomLightRED"
+                        android:textColor="#D32F2F"/>
+                    <!-- Custom GREEN SeekBar -->
+                    <TextView
+                        android:id="@+id/CustomLightGREEN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_below="@+id/CustomLightRED"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/CustomLightGREEN"
+                        android:textColor="#388E3C"/>
+                    <!-- Custom BLUE SeekBar -->
+                    <TextView
+                        android:id="@+id/CustomLightBLUE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_below="@+id/CustomLightGREEN"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/CustomLightBLUE"
+                        android:textColor="#1976D2"/>
+                    <!-- Custom LUX SeekBar -->
+                    <TextView
+                        android:id="@+id/CustomLightAUX"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_below="@+id/CustomLightBLUE"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/CustomLightBrightness" />
+                    <!-- Custom Light RED SeekBar -->
+                    <SeekBar
+                        android:id="@+id/CustomLightREDSeekBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="255"
+                        android:layout_below="@+id/CustomLightName"
+                        android:layout_toRightOf="@+id/CustomLightGREEN"
+                        android:layout_toEndOf="@+id/CustomLightGREEN" />
+                    <!-- Custom Light GREEN SeekBar -->
+                    <SeekBar
+                        android:id="@+id/CustomLightGREENSeekBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="255"
+                        android:layout_below="@+id/CustomLightRED"
+                        android:layout_toRightOf="@+id/CustomLightGREEN"
+                        android:layout_toEndOf="@+id/CustomLightGREEN" />
+                    <!-- Custom Light BLUE SeekBar -->
+                    <SeekBar
+                        android:id="@+id/CustomLightBLUESeekBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="255"
+                        android:layout_below="@+id/CustomLightGREEN"
+                        android:layout_alignLeft="@+id/CustomLightGREENSeekBar"
+                        android:layout_alignStart="@+id/CustomLightGREENSeekBar" />
+                    <!-- Custom Light LUX SeekBar -->
+                    <SeekBar
+                        android:id="@+id/CustomLightLUXSeekBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="255"
+                        android:layout_below="@+id/CustomLightBLUE"
+                        android:layout_alignLeft="@+id/CustomLightBLUESeekBar"
+                        android:layout_alignStart="@+id/CustomLightBLUESeekBar" />
+                </RelativeLayout>
+                <!-- Custom Light Quick Layout -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+                    <!-- Custom Light Quick Color Layout -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <!-- Custom Light Quick RED -->
+                        <ImageButton
+                            android:id="@+id/CustomLightQuickRED"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:contentDescription="@string/CustomSmartTimerRed"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:src="@drawable/ic_red"/>
+                        <!-- Custom Light Quick BLUE -->
+                        <ImageButton
+                            android:id="@+id/CustomLightQuickBLUE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:contentDescription="@string/CustomSmartTimerBlue"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:src="@drawable/ic_blue"/>
+                        <!-- Custom Light Quick GREEN -->
+                        <ImageButton
+                            android:id="@+id/CustomLightQuickGREEN"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:contentDescription="@string/CustomSmartTimerGreen"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:src="@drawable/ic_green"/>
+                        <!-- Custom Light Quick Pink -->
+                        <ImageButton
+                            android:id="@+id/CustomLightQuickPink"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:contentDescription="@string/CustomSmartTimerPink"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:src="@drawable/ic_pink"/>
+                    </LinearLayout>
+                    <!-- Custom Light Quick Color Layout -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <!-- Custom Light Quick Yellow -->
+                        <ImageButton
+                            android:id="@+id/CustomLightQuickYellow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:contentDescription="@string/CustomSmartTimerYellow"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:src="@drawable/ic_yellow"/>
+                        <!-- Custom Light Quick Orange -->
+                        <ImageButton
+                            android:id="@+id/CustomLightQuickOrange"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:contentDescription="@string/CustomSmartTimerOrange"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:src="@drawable/ic_orange"/>
+                        <!-- Custom Light Quick Purple -->
+                        <ImageButton
+                            android:id="@+id/CustomLightQuickPurple"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:contentDescription="@string/CustomSmartTimerPurple"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:src="@drawable/ic_purple"/>
+                        <!-- Custom Light Quick Brown -->
+                        <ImageButton
+                            android:id="@+id/CustomLightQuickBrown"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:contentDescription="@string/CustomSmartTimerBrown"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:src="@drawable/ic_brown"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

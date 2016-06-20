@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="daum-speech-openapi-3.0-unspecified">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/ILA/daum-speech-openapi-3.0/unspecified/jars/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/ILA/daum-speech-openapi-3.0/unspecified/jars/libs/dialoid-apklib-0.8.2.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/ILA/daum-speech-openapi-3.0/unspecified/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

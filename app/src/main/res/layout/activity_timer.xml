@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <!-- ToolBar -->
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/custom_toolbar"/>
+
+    <!-- Timer ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <!-- Timer ScrollView Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- TimerTextLayout -->
+            <RelativeLayout
+                android:id="@+id/TimerTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!-- Timer Setting TextView -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TimerSettingTime"
+                    android:textColor="@color/colorPrimaryText"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="10dp"/>
+                <!-- Timer Switch Button -->
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/TimerPowerSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:checked="true"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <!-- Timer EditText Layout -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                card_view:cardCornerRadius="10dp">
+                <!-- Timer EditText Layout -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- Timer EditText -->
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/TimerNameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:singleLine="true"
+                        android:maxLength="10"
+                        android:hint="@string/TimerName"/>
+                </android.support.design.widget.TextInputLayout>
+            </android.support.v7.widget.CardView>
+
+            <!-- Timer Create Layout -->
+            <LinearLayout
+                android:id="@+id/TimerCreateLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!-- Timer Picker Layout -->
+                <LinearLayout
+                    android:id="@+id/TimerPickerLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- Hour Picker CardView -->
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        card_view:cardCornerRadius="10dp">
+                        <!-- Hour Picker Layout -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <!-- Hour TextView -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="@string/TimerHourText"/>
+                            <!-- Under -->
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="0.3dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/colorSecondaryText"/>
+                            <!-- Hour Number Picker -->
+                            <NumberPicker
+                                android:id="@+id/TimerHourPicker"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                    <!-- Minute Picker CardView -->
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        card_view:cardCornerRadius="10dp">
+                        <!-- Minute Picker Layout -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <!-- Minute TextView -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="@string/TimerMinuteText"/>
+                            <!-- Under -->
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="0.3dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/colorSecondaryText"/>
+                            <!-- Minute Number Picker -->
+                            <NumberPicker
+                                android:id="@+id/TimerMinutePicker"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                    <!-- Seconds Picker CardView -->
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        card_view:cardCornerRadius="10dp">
+                        <!-- Seconds Picker Layout -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <!-- Seconds TextView -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="@string/TimerSecondsText"/>
+                            <!-- Under -->
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="0.3dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/colorSecondaryText"/>
+                            <!-- Seconds Number Picker -->
+                            <NumberPicker
+                                android:id="@+id/TimerSecondsPicker"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+                <!-- Timer Button Layout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- Timer Start Button -->
+                    <Button
+                        android:id="@+id/TimerStartButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/TimerStartButton"
+                        android:textColor="@color/colorAccent"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:enabled="false" />
+                    <!-- Timer Create Button -->
+                    <Button
+                        android:id="@+id/TimerCreateButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/TimerCreateButton"
+                        android:textColor="@color/colorAccent"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:enabled="false" />
+                    <!-- Timer Reset Button -->
+                    <Button
+                        android:id="@+id/TimerResetButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/TimerResetButton"
+                        android:textColor="@color/colorAccent"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:enabled="false"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Timer TextView -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/TimerListText"
+                android:textColor="@color/colorPrimaryText"/>
+
+            <!-- Timer RecyclerView -->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/TimerRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadeScrollbars="true"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

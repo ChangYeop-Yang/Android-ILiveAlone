@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Alarm Dialog Color Layout -->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="10dp">
+        <!-- Alarm Dialog Color Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Alarm Text Layout -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!-- Alarm Dialog Color TextView -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/CustomAlarmColor"
+                    android:textColor="@color/colorPrimaryText"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="10dp"/>
+                <!-- Alarm Dialog Power Switch -->
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/AlarmDialogPower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="10dp"
+                    android:checked="false" />
+            </RelativeLayout>
+
+            <!-- Under -->
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.3dp"
+                android:background="@color/colorSecondaryText"/>
+
+            <!-- Alarm Radio Group -->
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!-- Timer Dialog Radio Layout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- Radio Red -->
+                    <RadioButton
+                        android:id="@+id/TimerDialogRed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:text="@string/CustomSmartTimerRed"
+                        android:textColor="#D32F2F"/>
+                    <!-- Radio Blue -->
+                    <RadioButton
+                        android:id="@+id/TimerDialogBlue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/CustomSmartTimerBlue"
+                        android:textColor="#1976D2"/>
+                    <!-- Radio Green -->
+                    <RadioButton
+                        android:id="@+id/TimerDialogGreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:text="@string/CustomSmartTimerGreen"
+                        android:textColor="#388E3C"/>
+                </LinearLayout>
+                <!-- Timer Dialog Radio Layout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- Radio White -->
+                    <RadioButton
+                        android:id="@+id/TimerDialogWhite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/CustomSmartTimerWhite"
+                        android:textColor="#FFFFFF"/>
+                    <!-- Radio Purple -->
+                    <RadioButton
+                        android:id="@+id/TimerDialogPurple"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/CustomSmartTimerPurple"
+                        android:textColor="#7B1FA2"/>
+                    <!-- Radio Orange -->
+                    <RadioButton
+                        android:id="@+id/TimerDialogOrange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/CustomSmartTimerOrange"
+                        android:textColor="#F57C00"/>
+                </LinearLayout>
+                <!-- Timer Dialog Radio Layout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- Radio Pink -->
+                    <RadioButton
+                        android:id="@+id/TimerDialogPink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/CustomSmartTimerPink"
+                        android:textColor="#FF4081"
+                        android:checked="false" />
+                    <!-- Radio Brown -->
+                    <RadioButton
+                        android:id="@+id/TimerDialogBrown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:text="@string/CustomSmartTimerBrown"
+                        android:textColor="#5D4037"/>
+                    <!-- Radio Yellow -->
+                    <RadioButton
+                        android:id="@+id/TimerDialogYellow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:text="@string/CustomSmartTimerYellow"
+                        android:textColor="#FFEB3B"/>
+                </LinearLayout>
+            </RadioGroup>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

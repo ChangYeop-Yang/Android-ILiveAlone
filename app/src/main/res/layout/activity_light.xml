@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <!-- ToolBar -->
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/custom_toolbar"/>
+
+    <!-- Light ScrollView Layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <!-- ScrollView Inner Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Light Setting CardView -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            card_view:cardCornerRadius="10dp">
+        <!-- Light Setting Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Light Text Layout -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!-- Light TextView -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/LightTotalSetting"
+                    android:textColor="@color/colorPrimaryText"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="10dp"/>
+                <!-- Light Power ImageButton -->
+                <ImageButton
+                    android:id="@+id/LightPowerSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@drawable/ic_shutdown"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <!-- Under -->
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.3dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorSecondaryText"/>
+            <!-- Light SeekBar Layout -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!-- Light RED TextView -->
+                <TextView
+                    android:id="@+id/LightRED"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/MainQuickRED"
+                    android:textSize="15sp"
+                    android:textColor="#D32F2F"/>
+                <!-- Light RED SeekBar -->
+                <SeekBar
+                    android:id="@+id/LightREDSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/LightGREEN"
+                    android:layout_toEndOf="@+id/LightGREEN"
+                    android:max="255"
+                    android:indeterminate="false"
+                    android:progress="125" />
+                <!-- Light GREEN TextView -->
+                <TextView
+                    android:id="@+id/LightGREEN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/LightRED"
+                    android:text="@string/MainQuickGREEN"
+                    android:textSize="15sp"
+                    android:textColor="#388E3C"/>
+                <!-- Light GREEN SeekBar -->
+                <SeekBar
+                    android:id="@+id/LightGREENSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/LightRED"
+                    android:layout_alignLeft="@+id/LightBLUESeekBar"
+                    android:layout_alignStart="@+id/LightBLUESeekBar"
+                    android:max="255"
+                    android:indeterminate="false"
+                    android:progress="125" />
+                <!-- Light BLUE TextView -->
+                <TextView
+                    android:id="@+id/LightBLUE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/LightGREEN"
+                    android:text="@string/MainQuickBLUE"
+                    android:textSize="15sp"
+                    android:textColor="#1976D2"/>
+                <!-- Light BLUE SeekBar -->
+                <SeekBar
+                    android:id="@+id/LightBLUESeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/LightGREEN"
+                    android:layout_alignLeft="@+id/LightREDSeekBar"
+                    android:layout_alignStart="@+id/LightREDSeekBar"
+                    android:max="255"
+                    android:indeterminate="false"
+                    android:progress="125" />
+                <!-- Light LUN TextView -->
+                <TextView
+                    android:id="@+id/LightLUN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/LightBLUE"
+                    android:text="@string/MainQuickBrightness"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorSecondaryText"/>
+                <!-- Light LUN SeekBar -->
+                <SeekBar
+                    android:id="@+id/LightLUXSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/LightBLUE"
+                    android:layout_alignLeft="@+id/LightBLUESeekBar"
+                    android:layout_alignStart="@+id/LightBLUESeekBar"
+                    android:max="255"
+                    android:indeterminate="false"
+                    android:progress="125" />
+            </RelativeLayout>
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- Light Color Setting CardView -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            card_view:cardCornerRadius="10dp">
+            <!-- Light Color Setting Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!-- Light Color TextView -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/LightColorSetting"
+                    android:textColor="@color/colorPrimaryText"/>
+                <!-- Under -->
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.3dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorSecondaryText"/>
+                <!-- Light ImageButton Layout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- Light RED ImageButton -->
+                    <ImageButton
+                        android:id="@+id/LightREDPencil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        android:layout_margin="5dp"
+                        android:contentDescription="@string/LightColorPenCilRED"
+                        android:src="@drawable/ic_red_pencil"
+                        android:background="?android:attr/selectableItemBackground"/>
+                    <!-- Light BLUE ImageButton -->
+                    <ImageButton
+                        android:id="@+id/LightBLUEPencil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        android:layout_margin="5dp"
+                        android:contentDescription="@string/LightColorPenCilBLUE"
+                        android:src="@drawable/ic_blue_pencil"
+                        android:background="?android:attr/selectableItemBackground"/>
+                    <!-- Light GREEN ImageButton -->
+                    <ImageButton
+                        android:id="@+id/LightGREENPencil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        android:layout_margin="5dp"
+                        android:contentDescription="@string/LightColorPenCilGREEN"
+                        android:src="@drawable/ic_green_pencil"
+                        android:background="?android:attr/selectableItemBackground"/>
+                    <!-- Light ORANGE ImageButton -->
+                    <ImageButton
+                        android:id="@+id/LightORANGEPencil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        android:layout_margin="5dp"
+                        android:contentDescription="@string/LightColorPenCilORANGE"
+                        android:src="@drawable/ic_orange_pencil"
+                        android:background="?android:attr/selectableItemBackground"/>
+                    <!-- Light Purple ImageButton -->
+                    <ImageButton
+                        android:id="@+id/LightPurplePencil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        android:layout_margin="5dp"
+                        android:contentDescription="@string/LightColorPenCilPURPLE"
+                        android:src="@drawable/ic_purple_pencil"
+                        android:background="?android:attr/selectableItemBackground"/>
+                    <!-- Light Yellow ImageButton -->
+                    <ImageButton
+                        android:id="@+id/LightYellowPencil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        android:layout_margin="5dp"
+                        android:contentDescription="@string/LightColorPenCilYellow"
+                        android:src="@drawable/ic_yellow_pencil"
+                        android:background="?android:attr/selectableItemBackground"/>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- Light RecyclerView -->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/LightRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

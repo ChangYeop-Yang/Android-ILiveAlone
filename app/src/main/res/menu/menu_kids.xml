@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Kids Sort -->
+    <item
+        android:id="@+id/KidsSort"
+        android:title="@string/AlarmMenuSort"
+        android:icon="@drawable/ic_sort"
+        android:orderInCategory="1"
+        app:showAsAction="always">
+        <menu>
+            <!-- Kids Name Sort -->
+            <item
+                android:id="@+id/KidsNameSort"
+                android:title="@string/AlarmMenuSortText"
+                android:icon="@drawable/ic_text_sort"
+                android:orderInCategory="1" />
+            <!-- Kids Animal Sort -->
+            <item
+                android:id="@+id/KidsAnimalSort"
+                android:title="@string/CustomKidsSortAnimal"
+                android:icon="@drawable/ic_pets"
+                android:orderInCategory="1" />
+            <!-- Kids Fruits Sort -->
+            <item
+                android:id="@+id/KidsFruitsSort"
+                android:title="@string/CustomKidsSortFruits"
+                android:icon="@drawable/ic_fruits"
+                android:orderInCategory="2" />
+            <!-- Kids Vegetable Sort -->
+            <item
+                android:id="@+id/KidsVegetableSort"
+                android:title="@string/CustomKidsSortVegetable"
+                android:icon="@drawable/ic_vegetables"
+                android:orderInCategory="3" />
+            <!-- Kids Object Sort -->
+            <item
+                android:id="@+id/KidsObjectSort"
+                android:title="@string/CustomKidsSortObject"
+                android:icon="@drawable/ic_object"
+                android:orderInCategory="4" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <!-- Custom Connection ImageView -->
+    <ImageView
+        android:id="@+id/CustomConnectionImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:contentDescription="@string/CustomConnectionImageView"
+        android:background="@drawable/ic_bridge"
+        android:scaleType="fitXY"/>
+
+    <!-- Custom Connection Text Layout -->
+    <LinearLayout
+        android:id="@+id/CustomConnectionTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- Custom Connection IP TextView -->
+        <TextView
+            android:id="@+id/CustomConnectionIP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/CustomConnectionIP"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"/>
+        <!-- Custom Connection MAC TextView -->
+        <TextView
+            android:id="@+id/CustomConnectionMAC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/CustomConnectionMAC" />
+    </LinearLayout>
+</LinearLayout>
