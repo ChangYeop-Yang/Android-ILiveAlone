@@ -6,9 +6,21 @@ Android - I Live Alone (ILA)
 ● 프로젝트 개요
 --------------------------------------------
 
+
+<p align="center">
+  <img src="https://lh3.googleusercontent.com/a-qxc8KZxYr7HZxjRQ3DoKiY4qxfOHVj17kQFv6pmxLpTQW3AE3eGSYOIjmMxih34A=w300-rw">
+</p>
+
 ⓐ I Live Alone(ILA) 어플리케이션은 Philips Hue 제품을 통하여 날씨정보, 알람, 타이머, 음성인식, 센서 등을 통하여 HUE의 기능을 다양하게 사용할 수 있도록 하였으며 최대한 생활에 밀접하게 작용할 수 있도록 개발을 하였습니다.
 
 ⓑ I Live Alone(ILA) 어플리케이션은 혼자 사는 가구와 어린아이가 있는 가구에서 사용할 수 있도록 개발을 하였습니다.
+
+* * *
+
+● 프로젝트 개발 환경
+--------------------------------------------
+
+![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Envirments_display.JPG)
 
 * * *
 
@@ -81,5 +93,7 @@ Android - I Live Alone (ILA)
 ＊ Naver Blog - [Click](http://yeop9657.blog.me/220574904345)
 
 ＊ Github - [Click](https://github.com/ChangYeop-Yang/Android-ILiveAlone)
+
+＊ Play Store - [Click](https://play.google.com/store/apps/details?id=com.net.alone.ila)
 
 * * *
