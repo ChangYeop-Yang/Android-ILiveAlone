@@ -90,9 +90,11 @@ Android - I Live Alone (ILA)
 
 ＊ 수상내역 - Philips Hue Day 2등
 
-＊ Naver Blog - [Click](http://yeop9657.blog.me/220574904345)
-
 ＊ Github - [Click](https://github.com/ChangYeop-Yang/Android-ILiveAlone)
+
+＊ Youtube - [Click](https://www.youtube.com/playlist?list=PLrf5kzZX3bT_LKTkHsg3oM5lWKB3p-fld)
+
+＊ Naver Blog - [Click](http://yeop9657.blog.me/220574904345)
 
 ＊ Play Store - [Click](https://play.google.com/store/apps/details?id=com.net.alone.ila)
 
