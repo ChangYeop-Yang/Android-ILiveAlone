@@ -87,13 +87,13 @@
 
 ## ★ REFERENCE
 
-* [Github](https://github.com/ChangYeop-Yang/Android-ILiveAlone)
+* [:airplane: Github](https://github.com/ChangYeop-Yang/Android-ILiveAlone)
 
-* [Youtubeick](https://www.youtube.com/playlist?list=PLrf5kzZX3bT_LKTkHsg3oM5lWKB3p-fld)
+* [:airplane: Youtubeick](https://www.youtube.com/playlist?list=PLrf5kzZX3bT_LKTkHsg3oM5lWKB3p-fld)
 
-* [Naver Blog](http://yeop9657.blog.me/220574904345)
+* [:airplane: Naver Blog](http://yeop9657.blog.me/220574904345)
 
-* [Google Play Store](https://play.google.com/store/apps/details?id=com.net.alone.ila)
+* [:airplane: Google Play Store](https://play.google.com/store/apps/details?id=com.net.alone.ila)
 
 ## ★ Developer Information
 
