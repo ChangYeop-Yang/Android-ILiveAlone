@@ -1,4 +1,4 @@
-# Android - I Live Alone (ILA)
+# ■ Android - I Live Alone (ILA)
 
 <p align="center">
   <img src="https://lh3.googleusercontent.com/a-qxc8KZxYr7HZxjRQ3DoKiY4qxfOHVj17kQFv6pmxLpTQW3AE3eGSYOIjmMxih34A=w300-rw">
@@ -10,11 +10,11 @@
 
 ⓑ I Live Alone(ILA) 어플리케이션은 혼자 사는 가구와 어린아이가 있는 가구에서 사용할 수 있도록 개발을 하였습니다.
 
-## ★ 프로젝트 개발 환경
+## ★ Development Environment
 
 ![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Envirments_display.JPG)
 
-## ★ 화면 종류
+## ★ Display Type
 
 |ⓐ 홈 화면|
 |:--------|
@@ -78,7 +78,7 @@
 
 * * *
 
-## ★ 사용권한
+## ★ Authority for use
 
 |Name|Comment|
 |:--:|-------|
@@ -89,17 +89,15 @@
 
 * * *
 
-## ★ 문의 및 기타사항**
+## ★ REFERENCE
 
-＊ 수상내역 - Philips Hue Day 2등
+* [Github](https://github.com/ChangYeop-Yang/Android-ILiveAlone)
 
-＊ Github - [Click](https://github.com/ChangYeop-Yang/Android-ILiveAlone)
+* [Youtubeick](https://www.youtube.com/playlist?list=PLrf5kzZX3bT_LKTkHsg3oM5lWKB3p-fld)
 
-＊ Youtube - [Click](https://www.youtube.com/playlist?list=PLrf5kzZX3bT_LKTkHsg3oM5lWKB3p-fld)
+* [Naver Blog](http://yeop9657.blog.me/220574904345)
 
-＊ Naver Blog - [Click](http://yeop9657.blog.me/220574904345)
-
-＊ Play Store - [Click](https://play.google.com/store/apps/details?id=com.net.alone.ila)
+* [Google Play Store](https://play.google.com/store/apps/details?id=com.net.alone.ila)
 
 ## ★ Developer Information
 
