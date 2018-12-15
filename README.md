@@ -1,10 +1,10 @@
 # Android - I Live Alone (ILA)
 
-## ★ 프로젝트 개요
-
 <p align="center">
   <img src="https://lh3.googleusercontent.com/a-qxc8KZxYr7HZxjRQ3DoKiY4qxfOHVj17kQFv6pmxLpTQW3AE3eGSYOIjmMxih34A=w300-rw">
 </p>
+
+## ★ Outline
 
 ⓐ I Live Alone(ILA) 어플리케이션은 Philips Hue 제품을 통하여 날씨정보, 알람, 타이머, 음성인식, 센서 등을 통하여 HUE의 기능을 다양하게 사용할 수 있도록 하였으며 최대한 생활에 밀접하게 작용할 수 있도록 개발을 하였습니다.
 
@@ -16,41 +16,47 @@
 
 ## ★ 화면 종류
 
-**ⓐ 홈 화면**
-![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Display_slide_1.JPG "Home Display")
+|ⓐ 홈 화면|
+|:--------|
+|![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Display_slide_1.JPG "Home Display")|
 
 * * *
 
-**ⓑ 설정 화면**
-![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Display_slide_2.JPG "Setting Display")
+|ⓑ 설정 화면|
+|:---------:|
+|![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Display_slide_2.JPG "Setting Display")|
 
 * * *
 
-**ⓒ 알람 화면**
-![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Display_slide_3.JPG "Alarm Display")
+|ⓒ 알람 화면|
+|:---------:|
+|![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Display_slide_3.JPG "Alarm Display")|
 
 * * *
 
-**ⓓ 스마트 타이머 화면**
-![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Display_slide_4.JPG "Timer Display")
+|ⓓ 스마트 타이머 화면|
+|:-----------------:|
+|![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Display_slide_4.JPG "Timer Display")|
 
 * * *
 
-**ⓔ 생활 화면**
-![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Display_slide_5.JPG "Life Display")
+|ⓔ 생활 화면|
+|:---------:|
+|![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Display_slide_5.JPG "Life Display")|
 
 * * *
 
-**ⓕ 조명 화면**
-![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Display_slide_6.JPG "Light Display")
+|ⓕ 조명 화면|
+|:---------:|
+|![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Display_slide_6.JPG "Light Display")|
 
 * * *
 
-**ⓖ 키즈 화면**
-![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Display_slide_7.JPG "Kids Display")
+|ⓖ 키즈 화면|
+|:---------:|
+|![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Display_slide_7.JPG "Kids Display")|
 
-## ★ 기능
---------------------------------------------
+## ★ Function for Application
 
 ⓐ GPS 통하여 현재 위치 날씨 정보를 HUE 알람과 메시지를 통하여 확인할 수 있습니다.
 
@@ -73,7 +79,6 @@
 * * *
 
 ## ★ 사용권한
---------------------------------------------
 
 |Name|Comment|
 |:--:|-------|
@@ -85,7 +90,6 @@
 * * *
 
 ## ★ 문의 및 기타사항**
---------------------------------------------
 
 ＊ 수상내역 - Philips Hue Day 2등
 
