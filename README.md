@@ -1,11 +1,6 @@
-Android - I Live Alone (ILA)
-=============================================
+# Android - I Live Alone (ILA)
 
-* * * 
-
-● 프로젝트 개요
---------------------------------------------
-
+## ★ 프로젝트 개요
 
 <p align="center">
   <img src="https://lh3.googleusercontent.com/a-qxc8KZxYr7HZxjRQ3DoKiY4qxfOHVj17kQFv6pmxLpTQW3AE3eGSYOIjmMxih34A=w300-rw">
@@ -15,42 +10,46 @@ Android - I Live Alone (ILA)
 
 ⓑ I Live Alone(ILA) 어플리케이션은 혼자 사는 가구와 어린아이가 있는 가구에서 사용할 수 있도록 개발을 하였습니다.
 
-* * *
-
-● 프로젝트 개발 환경
---------------------------------------------
+## ★ 프로젝트 개발 환경
 
 ![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Envirments_display.JPG)
 
-* * *
-
-● 화면 종류
---------------------------------------------
+## ★ 화면 종류
 
 **ⓐ 홈 화면**
 ![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Display_slide_1.JPG "Home Display")
 
+* * *
+
 **ⓑ 설정 화면**
 ![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Display_slide_2.JPG "Setting Display")
+
+* * *
 
 **ⓒ 알람 화면**
 ![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Display_slide_3.JPG "Alarm Display")
 
+* * *
+
 **ⓓ 스마트 타이머 화면**
 ![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Display_slide_4.JPG "Timer Display")
+
+* * *
 
 **ⓔ 생활 화면**
 ![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Display_slide_5.JPG "Life Display")
 
+* * *
+
 **ⓕ 조명 화면**
 ![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Display_slide_6.JPG "Light Display")
+
+* * *
 
 **ⓖ 키즈 화면**
 ![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Display_slide_7.JPG "Kids Display")
 
-* * *
-
-● 기능
+## ★ 기능
 --------------------------------------------
 
 ⓐ GPS 통하여 현재 위치 날씨 정보를 HUE 알람과 메시지를 통하여 확인할 수 있습니다.
@@ -73,7 +72,7 @@ Android - I Live Alone (ILA)
 
 * * *
 
-● 사용권한
+## ★ 사용권한
 --------------------------------------------
 
 |Name|Comment|
@@ -85,7 +84,7 @@ Android - I Live Alone (ILA)
 
 * * *
 
-**● 문의 및 기타사항**
+## ★ 문의 및 기타사항**
 --------------------------------------------
 
 ＊ 수상내역 - Philips Hue Day 2등
@@ -98,4 +97,8 @@ Android - I Live Alone (ILA)
 
 ＊ Play Store - [Click](https://play.google.com/store/apps/details?id=com.net.alone.ila)
 
-* * *
+## ★ Developer Information
+
+|:rocket: Github QR Code|:pencil: Naver-Blog QR Code|:eyeglasses: Linked-In QR Code|
+|:---------------------:|:-------------------------:|:----------------------------:|
+|![](https://user-images.githubusercontent.com/20036523/50044128-60406880-00c2-11e9-8d57-ea1cb8e6b2a7.jpg)|![](https://user-images.githubusercontent.com/20036523/50044131-60d8ff00-00c2-11e9-818c-cf5ad97dc76e.jpg)|![](https://user-images.githubusercontent.com/20036523/50044130-60d8ff00-00c2-11e9-991a-107bffa2bf57.jpg)|
