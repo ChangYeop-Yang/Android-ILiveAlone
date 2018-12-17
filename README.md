@@ -16,43 +16,31 @@
 
 ## ★ Display Type
 
-|ⓐ 홈 화면|
+|:airplane: 홈 화면|
 |:--------|
 |![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Display_slide_1.JPG "Home Display")|
 
-* * *
-
-|ⓑ 설정 화면|
+|:airplane: 설정 화면|
 |:---------:|
 |![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Display_slide_2.JPG "Setting Display")|
 
-* * *
-
-|ⓒ 알람 화면|
+|:airplane: 알람 화면|
 |:---------:|
 |![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Display_slide_3.JPG "Alarm Display")|
 
-* * *
-
-|ⓓ 스마트 타이머 화면|
+|:airplane: 스마트 타이머 화면|
 |:-----------------:|
 |![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Display_slide_4.JPG "Timer Display")|
 
-* * *
-
-|ⓔ 생활 화면|
+|:airplane: 생활 화면|
 |:---------:|
 |![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Display_slide_5.JPG "Life Display")|
 
-* * *
-
-|ⓕ 조명 화면|
+|:airplane: 조명 화면|
 |:---------:|
 |![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Display_slide_6.JPG "Light Display")|
 
-* * *
-
-|ⓖ 키즈 화면|
+|:airplane: 키즈 화면|
 |:---------:|
 |![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Display_slide_7.JPG "Kids Display")|
 
