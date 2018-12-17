@@ -66,7 +66,7 @@
 
 ## ★ Authority for use
 
-|:book: Number|:book: Name|:book: Comment|
+|:book: Num|:book: Name|:book: Comment|
 |:-----------:|:---------:|:------------:|
 |001|GPS 권한|날씨 예보를 위하여 사용하였습니다.|
 |002|마이크 권한|음악 기능을 사용하기 위하여 사용하였으며 마이크를 통한 저장기능은 사용하지 않았습니다.|
