@@ -75,9 +75,9 @@
 
 ## ★ Demo Play for Application
 
-|🎥 Demo Play 001|🎥 Demo Play 002|
-|:--------------:|:---------------:|
-|<div align="center"><a href="https://www.youtube.com/watch?v=zYf7ysgMbpM"><img src="https://img.youtube.com/vi/zYf7ysgMbpM/0.jpg" width="1024" height="486"></a></div>|<div align="center"><a href="https://www.youtube.com/watch?v=6DbPrzCEdFM"><img src="https://img.youtube.com/vi/6DbPrzCEdFM/0.jpg" width="1024" height="486"></a></div>|
+|:movie_camera: Demo Play 001|:movie_camera: Demo Play 002|:movie_camera: Demo Play 003|
+|:--------------------------:|:--------------------------:|:--------------------------:|
+|<div align="center"><a href="https://www.youtube.com/watch?v=zYf7ysgMbpM"><img src="https://img.youtube.com/vi/zYf7ysgMbpM/0.jpg" width="1024" height="486"></a></div>|<div align="center"><a href="https://www.youtube.com/watch?v=6DbPrzCEdFM"><img src="https://img.youtube.com/vi/6DbPrzCEdFM/0.jpg" width="1024" height="486"></a></div>|<div align="center"><a href="https://www.youtube.com/watch?v=LhAC8-bq9a4"><img src="https://img.youtube.com/vi/LhAC8-bq9a4/0.jpg" width="1024" height="486"></a></div>|
 
 ## ★ REFERENCE
 
