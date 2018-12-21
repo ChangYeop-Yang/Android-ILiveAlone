@@ -30,6 +30,15 @@
 
 * Shake 기능을 통하여 파티와 같은 효과를 또는 음악 기능을 통하여 음악을 통해서 HUE를 재미있게 즐길 수 있습니다.
 
+##### ※ Authority for use
+
+|:book: Name|:book: Comment|
+|:---------:|:------------:|
+|GPS 권한|날씨 예보를 위하여 사용하였습니다.|
+|마이크 권한|음악 기능을 사용하기 위하여 사용하였으며 마이크를 통한 저장기능은 사용하지 않았습니다.|
+|카메라 권한|사진을 통한 색상 추출을 위하여 사용하였습니다.|
+|외부 메모리 권한|음성인식을 사용하기 위해서 사용하였습니다. 음성인식을 사용하기 위해서는 음성을 저장한 뒤에 분석을 해야 하므로 사용하였습니다.|
+
 ## ★ Development Environment
 
 ![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Envirments_display.JPG)
@@ -64,15 +73,11 @@
 |:---------------:|
 |![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Display_slide_7.JPG "Kids Display")|
 
+## ★ Demo Play for Application
 
-## ★ Authority for use
-
-|:book: Name|:book: Comment|
-|:---------:|:------------:|
-|GPS 권한|날씨 예보를 위하여 사용하였습니다.|
-|마이크 권한|음악 기능을 사용하기 위하여 사용하였으며 마이크를 통한 저장기능은 사용하지 않았습니다.|
-|카메라 권한|사진을 통한 색상 추출을 위하여 사용하였습니다.|
-|외부 메모리 권한|음성인식을 사용하기 위해서 사용하였습니다. 음성인식을 사용하기 위해서는 음성을 저장한 뒤에 분석을 해야 하므로 사용하였습니다.|
+|🎥 Demo Play 001|🎥 Demo Play 002|
+|:--------------:|:---------------:|
+|<div align="center"><a href="https://www.youtube.com/watch?v=zYf7ysgMbpM"><img src="https://img.youtube.com/vi/zYf7ysgMbpM/0.jpg" width="1024" height="486"></a></div>|<div align="center"><a href="https://www.youtube.com/watch?v=6DbPrzCEdFM"><img src="https://img.youtube.com/vi/6DbPrzCEdFM/0.jpg" width="1024" height="486"></a></div>|
 
 ## ★ REFERENCE
 
