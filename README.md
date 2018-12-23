@@ -39,6 +39,10 @@
 |카메라 권한|사진을 통한 색상 추출을 위하여 사용하였습니다.|
 |외부 메모리 권한|음성인식을 사용하기 위해서 사용하였습니다. 음성인식을 사용하기 위해서는 음성을 저장한 뒤에 분석을 해야 하므로 사용하였습니다.|
 
+## ★ Structure for Application
+
+![](https://user-images.githubusercontent.com/20036523/50383798-fea17f00-06fd-11e9-883b-64b356e3fd43.png)
+
 ## ★ Development Environment
 
 ![Alt text](https://github.com/ChangYeop-Yang/Android-ILiveAlone/blob/master/App_Display/Envirments_display.JPG)
